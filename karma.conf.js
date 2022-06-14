@@ -26,7 +26,6 @@ module.exports = (config) => {
       'karma-safari-launcher',
       'karma-firefox-launcher',
       'karma-phantomjs-launcher',
-
       'karma-mocha',
       'karma-spec-reporter',
     ],

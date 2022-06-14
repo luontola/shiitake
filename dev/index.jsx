@@ -1,7 +1,6 @@
 /* eslint-env browser */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Shiitake from '../src';
 
@@ -150,4 +149,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('react-root'));
+createRoot(<App />, document.getElementById('react-root'));

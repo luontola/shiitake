@@ -13,7 +13,7 @@ import {
 } from './constants';
 
 const Shiitake = (props) => {
-  const allChildren = (typeof props.children === 'string') ? props.children : '';
+  const allChildren = (typeof props.children === React.ReactNode) ? props.children : '';
 
   const sizerEl = React.useRef();
   const spreaderEl = React.useRef();
@@ -164,7 +164,7 @@ Shiitake.propTypes = {
   className: PropTypes.string,
   lines: PropTypes.number.isRequired,
   attributes: PropTypes.object, // eslint-disable-line react/forbid-prop-types
-  children: PropTypes.string.isRequired,
+  children: React.ReactNode,
   throttleRate: PropTypes.number,
   tagName: PropTypes.string,
   overflowNode: PropTypes.node,
@@ -177,7 +177,7 @@ Shiitake.defaultProps = {
   throttleRate: undefined,
   tagName: undefined,
   overflowNode: '\u2026',
-  children: '',
+  children: undefined,
   onTruncationChange: undefined,
 };
 
