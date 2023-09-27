@@ -16,6 +16,7 @@ declare module 'shiitake' {
     overflowNode?: React.ReactNode,
     onTruncationChange?: (isTruncated: boolean) => void,
     attributes?: WhitelistedElementAttributes,
+    children: string,
   }
 
   export default class Shiitake extends React.Component<ShiitakeProps> {
