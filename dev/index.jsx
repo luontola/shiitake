@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Shiitake from '../src';
 
@@ -150,4 +151,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('react-root'));
+const domNode = document.getElementById('react-root')
+const root = createRoot(domNode);
+root.render(<App />);
